@@ -1,0 +1,1120 @@
+/* TODO EL BODY*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*declarar areas*/
+.logoContainer {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.carrousel {
+    grid-area: carrousel;
+
+}
+
+.linkTienda {
+    grid-area: tienda;
+}
+
+.containerHome {
+    grid-area: galeria;
+}
+
+.videoHome {
+    grid-area: video;
+}
+
+
+.containerServicios {
+    grid-area: servicios;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*---MENÚ-----*/
+.menuContainer {
+
+    color: $negro;
+    height: 10%;
+    display: grid;
+
+    grid-template-areas:
+        "logo"
+        "nav"
+        "carrousel"
+        "tienda"
+        "galeria"
+        "video"
+        "servicios"
+        "footer";
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        list-style: none;
+        padding: 10px 5px;
+
+        ul {
+
+
+            li {
+                font-size: $medida2;
+                font-family:'Merriweather', serif;
+                color: $negro;
+
+
+
+                a {
+                    font-size: $medida2;
+                    font-family: 'Merriweather', serif;
+                    color: $negro;
+                    text-decoration: none;
+                    margin: 20px 0;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.logoContainer {
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/*MI PÁGINA PRINCIPAL*/
+
+/* Link a tienda */
+.linkTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: 'Merriweather', serif;
+        padding: 15px 0;
+        text-align: center;
+        font-size: $medida2;
+    }
+
+    .boton {
+        background-color: $negro;
+        border: 2px solid $negro;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $medida1;
+        font-family: 'Merriweather', serif;
+        color: $blanco;
+        width: 30%;
+        height: 50%;
+        cursor: pointer;
+        padding-bottom: 15px 0;
+        /* margin: 5px 570px;*/
+        transition: .8s ease all;
+
+        &:hover {
+            background: #334e58;
+            border: 2px solid #334e58;
+            transform: scale(2);
+        }
+
+    }
+}
+
+/*Imagenes de mi Home*/
+
+.padre {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 0 3px;
+    margin-top: 5px;
+
+    .img {
+        width: 100%;
+
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+
+    }
+
+}
+
+/*Video de Home*/
+.videoHome {
+    display: none;
+}
+
+/*Nuestros Servicios*/
+
+.btnWsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: $blanco;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+
+    &:hover {
+        text-decoration: none;
+        color: #0df053;
+        background: $blanco;
+    }
+}
+
+.containerServicios {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #334e58;
+    padding-top: 30px;
+    margin-top: 30px;
+
+    .divServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .medios {
+        font-size: $medida2;
+        font-family: 'Merriweather', serif;
+        color: $blanco;
+    }
+
+    .fa-solid {
+        color: $blanco;
+    }
+
+
+}
+
+/*---FOOTER-----*/
+
+.piePagina {
+    width: 100%;
+    padding-top: 20px;
+
+    .grupoUno {
+
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+
+        .box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-family: 'Merriweather', serif;
+                font-size: $medida2;
+
+                .logoFooter {
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .fa-solid {
+                        color: $negro;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .grupoDos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .fa-brands {
+                color: black;
+                size: 24px;
+
+                .derechos {
+                    font-family: 'Merriweather', serif;
+                    font-size: $medida2;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+/* ----- MEDIA 500PX----*/
+@media (min-width:500px) {
+
+    /*---MENÚ-----*/
+    .menuContainer {
+
+        color: $negro;
+        display: grid;
+        grid-template-areas:
+            "logo       logo"
+            "nav        nav"
+            "carrousel  carrousel"
+            "tienda     tienda"
+            "galeria    galeria"
+            "video      video"
+            "servicios  servicios"
+            "footer     footer"
+
+        ;
+        grid-template-columns: 1fr 1fr;
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            padding: 5px 5px;
+            margin: 10px 0;
+
+            ul {
+
+
+                li {
+                    font-size: $medida2;
+                    font-family: 'Merriweather', serif;
+                    color: $negro;
+
+
+
+                    a {
+                        font-size: $medida2;
+                        font-family: 'Merriweather', serif;
+                        color: $negro;
+                        text-decoration: none;
+                        
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+    .logoContainer {
+
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    /*MI PÁGINA PRINCIPAL*/
+    /* Link a tienda */
+    .linkTienda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            padding: 15px 0;
+            text-align: center;
+            font-size: $medida2;
+        }
+
+        .boton {
+            background-color: $negro;
+            border: 2px solid $negro;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $medida1;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+            width: 30%;
+            height: 50%;
+            cursor: pointer;
+            padding-bottom: 15px 0;
+            /* margin: 5px 570px;*/
+            transition: .8s ease all;
+
+            &:hover {
+                background: #334e58;
+                border: 2px solid #334e58;
+                transform: scale(2);
+            }
+
+        }
+    }
+
+
+    /*Imagenes de mi Home*/
+
+    .padre {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 20px;
+        justify-items: center;
+        margin: 0 3px;
+        margin-top: 15px;
+
+        .img {
+            width: 100%;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+
+        }
+
+    }
+
+    /*Video de Home*/
+    .videoHome {
+        display: none;
+    }
+
+    /*Nuestros Servicios*/
+
+    .btnWsp {
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background: #0df053;
+        color: $blanco;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 60px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+
+        &:hover {
+            text-decoration: none;
+            color: #0df053;
+            background: $blanco;
+        }
+    }
+
+    .containerServicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #334e58;
+        padding-top: 20px;
+        margin-bottom: 10px;
+
+        .divServicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .medios {
+            font-size: $medida2;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+        }
+
+        .fa-solid {
+            color: $blanco;
+        }
+
+
+    }
+
+    /*---FOOTER-----*/
+
+    .piePagina {
+        width: 100%;
+        padding-top: 0;
+
+        .grupoUno {
+
+            margin: auto;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+
+            .box {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                margin: 2px 5px;
+
+                p {
+                    font-family: 'Merriweather', serif;
+                    font-size: $medida2;
+
+                    .logoFooter {
+                        width: 60%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .fa-solid {
+                            color: $negro;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .grupoDos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+
+                .fa-brands {
+                    color: $negro;
+                    size: 24px;
+
+                    .derechos {
+                        font-family: 'Merriweather', serif;
+                        font-size: $medida2;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*--------------MEDIA 768PX------------------*/
+
+@media (min-width:768px) {
+
+    /*---MENÚ-----*/
+    .menuContainer {
+
+        color: $negro;
+        width: 100%;
+        height: 100px;
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "logo       nav"
+            "carrousel  carrousel"
+            "tienda     tienda"
+            "galeria    galeria"
+            "video      video"
+            "servicios  servicios"
+            "footer     footer"
+
+        ;
+        grid-template-columns: 1fr;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            width: 100%;
+            list-style: none;
+            padding: 12px 0;
+
+            ul {
+
+
+                li {
+                    font-size: $medida3;
+                    font-family: 'Merriweather', serif;
+                    color: $negro;
+
+
+
+                    a {
+                        font-size: $medida3;
+                        font-family: 'Merriweather', serif;
+                        color: $negro;
+                        text-decoration: none;
+                        margin: 20px 0;
+
+                        &:hover {
+                            border-bottom: 2px solid #334e58;
+                            color: #334e58;
+                            padding-bottom: 2px;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .logoContainer {
+
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+        }
+    }
+
+    /*MI PÁGINA PRINCIPAL*/
+    /* Link a tienda */
+    .linkTienda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            padding: 15px 0;
+            text-align: center;
+            font-size: $medida3;
+        }
+
+        .boton {
+            background-color: $negro;
+            border: 2px solid $negro;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $medida2;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+            width: 25%;
+            height: 50%;
+            cursor: pointer;
+            padding-bottom: 15px 0;
+            /* margin: 5px 570px;*/
+            transition: .8s ease all;
+
+            &:hover {
+                background: #334e58;
+                border: 2px solid #334e58;
+                transform: scale(2);
+            }
+
+        }
+    }
+
+
+    /*Imagenes de mi Home*/
+
+    .padre {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 20px;
+        justify-items: center;
+        margin: 0 3px;
+        margin-top: 15px;
+
+        .img {
+            width: 100%;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+
+        }
+
+    }
+
+    /*Video de Home*/
+    .videoHome {
+        display: none;
+    }
+
+    /*Nuestros Servicios*/
+
+    .btnWsp {
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background: #0df053;
+        color: $blanco;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 60px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+
+        &:hover {
+            text-decoration: none;
+            color: #0df053;
+            background: $blanco;
+        }
+    }
+
+    .containerServicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #334e58;
+        padding-top: 20px;
+        margin-bottom: 10px;
+
+        .divServicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .medios {
+            font-size: 18px;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+        }
+
+        .fa-solid {
+            color: $blanco;
+        }
+
+
+    }
+
+    /*---FOOTER-----*/
+
+    .piePagina {
+        width: 100%;
+        padding-top: 0;
+
+        .grupoUno {
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 45px 0;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-family: 'Merriweather', serif;
+                    font-size: $medida2;
+
+                    .logoFooter {
+                        width: 60%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .fa-solid {
+                            color: $negro;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .grupoDos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+
+                .fa-brands {
+                    color: $negro;
+                    size: 24px;
+
+                    .derechos {
+                        font-family: 'Merriweather', serif;
+                        font-size: $medida2;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*--------------MEDIA 1024PX------------------*/
+
+@media (min-width:1024px) {
+
+    /*---MENÚ-----*/
+    .menuContainer {
+
+        color: $negro;
+        width: 100%;
+        height: 100px;
+        display: grid;
+       
+        grid-template-areas:
+            "logo       nav        nav"
+            "carrousel  carrousel  carrousel"
+            "tienda     tienda     tienda"
+            "galeria    galeria    galeria"
+            "video      video      video"
+            "servicios  servicios  servicios"
+            "footer     footer     footer"
+
+        ;
+        grid-template-columns: 1fr 95% ;
+        margin: 0;
+
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+
+
+
+            ul {
+                li {
+
+                    font-size: $medida3;
+                    font-family: 'Merriweather', serif;
+                    color: $negro;
+                    margin: 10px 0;
+
+                    a {
+                        text-decoration: none;
+                        font-size: $medida3;
+                        font-family: 'Merriweather', serif;
+                        color: $negro;
+                        margin: 10px 0;
+
+                        &:a:hover {
+                            border-bottom: 2px solid #334e58;
+                            color: #334e58;
+                            padding-bottom: 2px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .logoContainer {
+
+        width: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .logo {
+            width: 80%;
+            display: flex;
+            align-items: start;
+            margin: 4px 2px;
+        }
+    }
+
+
+
+    /*MI PÁGINA PRINCIPAL*/
+    /* Link a tienda */
+    .linkTienda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            padding: 15px 0;
+            text-align: center;
+            font-size: $medida3;
+        }
+
+        .boton {
+            background-color: $negro;
+            border: 2px solid $negro;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $medida2;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+            width: 15%;
+            height: 50%;
+            cursor: pointer;
+            padding-bottom: 15px 0;
+            /* margin: 5px 570px;*/
+            transition: .8s ease all;
+
+            &:hover {
+                background: #334e58;
+                border: 2px solid #334e58;
+                transform: scale(2);
+            }
+
+        }
+    }
+
+
+    /*Imagenes de mi Home*/
+
+    .padre {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr ;
+        gap: 10px;
+        justify-items: center;
+        margin: 0 3px;
+        margin-top: 10px;
+
+        div {
+            .img {
+                width: 100%;
+    
+                margin-top: 10px;
+                margin-bottom: 5px;
+    
+    
+            }
+        }
+
+       
+
+    }
+
+    /*Video de Home*/
+    .videoHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+        margin-top: 70px;
+
+
+    }
+
+    /*Nuestros Servicios*/
+
+    .btnWsp {
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background: #0df053;
+        color: $blanco;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 60px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+
+        &:hover {
+            text-decoration: none;
+            color: #0df053;
+            background: $blanco;
+        }
+    }
+
+    .containerServicios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        height: 180px;
+        background-color: #334e58;
+        padding-top: 30px;
+
+        .divServicios {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .medios {
+            font-size: $medida2;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+            display: block;
+        }
+
+        .fa-solid {
+            color: $blanco;
+        }
+
+
+    }
+
+    /*---FOOTER-----*/
+
+    .piePagina {
+        width: 100%;
+
+
+        .grupoUno {
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+            padding: 3px 0;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+               
+                iframe {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                p {
+                    font-family: 'Merriweather', serif;
+                    font-size: $medida2;
+
+                  
+
+                        .fa-solid {
+                            color: $negro;
+
+                        }
+                    
+                }
+            }
+
+        }
+
+        .grupoDos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                .fa-brands {
+                    color: $negro;
+                    size: 24px;
+
+                    .derechos {
+                        font-family: 'Merriweather', serif;
+                        font-size: $medida2;
+                    }
+                }
+            }
+        }
+
+    }
+}

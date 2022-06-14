@@ -1,0 +1,860 @@
+@charset "UTF-8";
+/*Link fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+/* TODO EL BODY*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*declarar areas*/
+.logoContainer {
+  grid-area: logo;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.carrousel {
+  grid-area: carrousel;
+}
+
+.linkTienda {
+  grid-area: tienda;
+}
+
+.containerHome {
+  grid-area: galeria;
+}
+
+.videoHome {
+  grid-area: video;
+}
+
+.containerServicios {
+  grid-area: servicios;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*---MENÚ-----*/
+.menuContainer {
+  color: black;
+  height: 10%;
+  display: grid;
+  grid-template-areas: "logo" "nav" "carrousel" "tienda" "galeria" "video" "servicios" "footer";
+}
+
+.menuContainer .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: 10px 5px;
+}
+
+.menuContainer .menu ul li {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  color: black;
+}
+
+.menuContainer .menu ul li a {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  color: black;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.logoContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*MI PÁGINA PRINCIPAL*/
+/* Link a tienda */
+.linkTienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkTienda h1 {
+  font-family: 'Merriweather', serif;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.linkTienda .boton {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  color: #fff;
+  width: 30%;
+  height: 50%;
+  cursor: pointer;
+  padding-bottom: 15px 0;
+  /* margin: 5px 570px;*/
+  transition: .8s ease all;
+}
+
+.linkTienda .boton:hover {
+  background: #334e58;
+  border: 2px solid #334e58;
+  transform: scale(2);
+}
+
+/*Imagenes de mi Home*/
+.padre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin: 0 3px;
+  margin-top: 5px;
+}
+
+.padre .img {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/*Video de Home*/
+.videoHome {
+  display: none;
+}
+
+/*Nuestros Servicios*/
+.btnWsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 60px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btnWsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+.containerServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #334e58;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.containerServicios .divServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.containerServicios .medios {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  color: #fff;
+}
+
+.containerServicios .fa-solid {
+  color: #fff;
+}
+
+/*---FOOTER-----*/
+.piePagina {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.piePagina .grupoUno {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+.piePagina .grupoUno .box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.piePagina .grupoUno .box p {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.piePagina .grupoUno .box p .logoFooter {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piePagina .grupoUno .box p .logoFooter .fa-solid {
+  color: black;
+}
+
+.piePagina .grupoDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.piePagina .grupoDos .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.piePagina .grupoDos .box .fa-brands {
+  color: black;
+  size: 24px;
+}
+
+.piePagina .grupoDos .box .fa-brands .derechos {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+/* ----- MEDIA 500PX----*/
+@media (min-width: 500px) {
+  /*---MENÚ-----*/
+  .menuContainer {
+    color: black;
+    display: grid;
+    grid-template-areas: "logo       logo" "nav        nav" "carrousel  carrousel" "tienda     tienda" "galeria    galeria" "video      video" "servicios  servicios" "footer     footer";
+    grid-template-columns: 1fr 1fr;
+  }
+  .menuContainer .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 5px 5px;
+    margin: 10px 0;
+  }
+  .menuContainer .menu ul li {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: black;
+  }
+  .menuContainer .menu ul li a {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    text-decoration: none;
+  }
+  .logoContainer {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoContainer .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /*MI PÁGINA PRINCIPAL*/
+  /* Link a tienda */
+  .linkTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkTienda h1 {
+    font-family: 'Merriweather', serif;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .linkTienda .boton {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    width: 30%;
+    height: 50%;
+    cursor: pointer;
+    padding-bottom: 15px 0;
+    /* margin: 5px 570px;*/
+    transition: .8s ease all;
+  }
+  .linkTienda .boton:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+    transform: scale(2);
+  }
+  /*Imagenes de mi Home*/
+  .padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 0 3px;
+    margin-top: 15px;
+  }
+  .padre .img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /*Video de Home*/
+  .videoHome {
+    display: none;
+  }
+  /*Nuestros Servicios*/
+  .btnWsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+  .btnWsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+  }
+  .containerServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #334e58;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .containerServicios .divServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .containerServicios .medios {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+  }
+  .containerServicios .fa-solid {
+    color: #fff;
+  }
+  /*---FOOTER-----*/
+  .piePagina {
+    width: 100%;
+    padding-top: 0;
+  }
+  .piePagina .grupoUno {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+  .piePagina .grupoUno .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 2px 5px;
+  }
+  .piePagina .grupoUno .box p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+  .piePagina .grupoUno .box p .logoFooter {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .piePagina .grupoUno .box p .logoFooter .fa-solid {
+    color: black;
+  }
+  .piePagina .grupoDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .piePagina .grupoDos .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .piePagina .grupoDos .box .fa-brands {
+    color: black;
+    size: 24px;
+  }
+  .piePagina .grupoDos .box .fa-brands .derechos {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+}
+
+/*--------------MEDIA 768PX------------------*/
+@media (min-width: 768px) {
+  /*---MENÚ-----*/
+  .menuContainer {
+    color: black;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "logo       nav" "carrousel  carrousel" "tienda     tienda" "galeria    galeria" "video      video" "servicios  servicios" "footer     footer";
+    grid-template-columns: 1fr;
+  }
+  .menuContainer .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    list-style: none;
+    padding: 12px 0;
+  }
+  .menuContainer .menu ul li {
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: black;
+  }
+  .menuContainer .menu ul li a {
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  .menuContainer .menu ul li a:hover {
+    border-bottom: 2px solid #334e58;
+    color: #334e58;
+    padding-bottom: 2px;
+  }
+  .logoContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoContainer .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
+  /*MI PÁGINA PRINCIPAL*/
+  /* Link a tienda */
+  .linkTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkTienda h1 {
+    font-family: 'Merriweather', serif;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+  .linkTienda .boton {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    width: 25%;
+    height: 50%;
+    cursor: pointer;
+    padding-bottom: 15px 0;
+    /* margin: 5px 570px;*/
+    transition: .8s ease all;
+  }
+  .linkTienda .boton:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+    transform: scale(2);
+  }
+  /*Imagenes de mi Home*/
+  .padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 0 3px;
+    margin-top: 15px;
+  }
+  .padre .img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /*Video de Home*/
+  .videoHome {
+    display: none;
+  }
+  /*Nuestros Servicios*/
+  .btnWsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+  .btnWsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+  }
+  .containerServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #334e58;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .containerServicios .divServicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .containerServicios .medios {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+  }
+  .containerServicios .fa-solid {
+    color: #fff;
+  }
+  /*---FOOTER-----*/
+  .piePagina {
+    width: 100%;
+    padding-top: 0;
+  }
+  .piePagina .grupoUno {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 45px 0;
+  }
+  .piePagina .grupoUno .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .piePagina .grupoUno .box p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+  .piePagina .grupoUno .box p .logoFooter {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .piePagina .grupoUno .box p .logoFooter .fa-solid {
+    color: black;
+  }
+  .piePagina .grupoDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .piePagina .grupoDos .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .piePagina .grupoDos .box .fa-brands {
+    color: black;
+    size: 24px;
+  }
+  .piePagina .grupoDos .box .fa-brands .derechos {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+}
+
+/*--------------MEDIA 1024PX------------------*/
+@media (min-width: 1024px) {
+  /*---MENÚ-----*/
+  .menuContainer {
+    color: black;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas: "logo       nav        nav" "carrousel  carrousel  carrousel" "tienda     tienda     tienda" "galeria    galeria    galeria" "video      video      video" "servicios  servicios  servicios" "footer     footer     footer";
+    grid-template-columns: 1fr 95%;
+    margin: 0;
+  }
+  .menuContainer .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menuContainer .menu ul li {
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    margin: 10px 0;
+  }
+  .menuContainer .menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    margin: 10px 0;
+  }
+  .menuContainer .menu ul li a:a:hover {
+    border-bottom: 2px solid #334e58;
+    color: #334e58;
+    padding-bottom: 2px;
+  }
+  .logoContainer {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .logoContainer .logo {
+    width: 80%;
+    display: flex;
+    align-items: start;
+    margin: 4px 2px;
+  }
+  /*MI PÁGINA PRINCIPAL*/
+  /* Link a tienda */
+  .linkTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkTienda h1 {
+    font-family: 'Merriweather', serif;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+  .linkTienda .boton {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    width: 15%;
+    height: 50%;
+    cursor: pointer;
+    padding-bottom: 15px 0;
+    /* margin: 5px 570px;*/
+    transition: .8s ease all;
+  }
+  .linkTienda .boton:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+    transform: scale(2);
+  }
+  /*Imagenes de mi Home*/
+  .padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+    justify-items: center;
+    margin: 0 3px;
+    margin-top: 10px;
+  }
+  .padre div .img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  /*Video de Home*/
+  .videoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  /*Nuestros Servicios*/
+  .btnWsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+  .btnWsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+  }
+  .containerServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 180px;
+    background-color: #334e58;
+    padding-top: 30px;
+  }
+  .containerServicios .divServicios {
+    display: flex;
+    align-items: center;
+  }
+  .containerServicios .medios {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    display: block;
+  }
+  .containerServicios .fa-solid {
+    color: #fff;
+  }
+  /*---FOOTER-----*/
+  .piePagina {
+    width: 100%;
+  }
+  .piePagina .grupoUno {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 3px 0;
+  }
+  .piePagina .grupoUno .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .piePagina .grupoUno .box iframe {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .piePagina .grupoUno .box p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+  .piePagina .grupoUno .box p .fa-solid {
+    color: black;
+  }
+  .piePagina .grupoDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .piePagina .grupoDos .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .piePagina .grupoDos .box .fa-brands {
+    color: black;
+    size: 24px;
+  }
+  .piePagina .grupoDos .box .fa-brands .derechos {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
