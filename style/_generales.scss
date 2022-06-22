@@ -143,6 +143,12 @@ footer {
             border: 2px solid #334e58;
             transform: scale(2);
         }
+        a{
+            text-decoration: none;
+            font-size: $medida1;
+            font-family: 'Merriweather', serif;
+            color: $blanco;
+    }
 
     }
 }
@@ -406,6 +412,12 @@ footer {
                 border: 2px solid #334e58;
                 transform: scale(2);
             }
+            a{
+                text-decoration: none;
+                font-size: $medida3;
+                font-family: 'Merriweather', serif;
+                color: $blanco;
+        }
 
         }
     }
@@ -907,11 +919,27 @@ footer {
         align-items: center;
 
         .logo {
-            width: 80%;
+            width: 70%;
             display: flex;
             align-items: start;
-            margin: 4px 2px;
+            margin: 6px 2px;
+            animation-duration: 15s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+
+            @keyframes aparecer{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
         }
+        
+        
+        
+       
     }
 
 
@@ -923,10 +951,12 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 30px 0;
+        
 
         h1 {
             font-family: 'Merriweather', serif;
-            padding: 15px 0;
+            padding: 35px 0;
             text-align: center;
             font-size: $medida3;
         }
@@ -938,21 +968,28 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: $medida2;
+            font-size: $medida3;
             font-family: 'Merriweather', serif;
             color: $blanco;
             width: 15%;
-            height: 50%;
+            height: 60%;
             cursor: pointer;
-            padding-bottom: 15px 0;
+            padding-bottom: 20px 0;
             /* margin: 5px 570px;*/
             transition: .8s ease all;
-
-            &:hover {
-                background: #334e58;
-                border: 2px solid #334e58;
-                transform: scale(2);
+                &:hover {
+                    background: #334e58;
+                    border: 2px solid #334e58;
+                    transform: scale(2);
+                }
+                a{
+                    text-decoration: none;
+                    font-size: $medida3;
+                    font-family: 'Merriweather', serif;
+                    color: $blanco;
             }
+
+            
 
         }
     }
@@ -974,8 +1011,8 @@ footer {
             .img {
                 width: 100%;
     
-                margin-top: 10px;
-                margin-bottom: 5px;
+                margin-top: 15px;
+                margin-bottom: 15px;
     
     
             }
@@ -1105,7 +1142,7 @@ footer {
 
 
                 .fa-brands {
-                    color: $negro;
+                    color: $blanco;
                     size: 24px;
 
                     .derechos {

@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nos caracterizamos por el desarrollo de técnicas propias, que nos permiten crear diseños únicos.">
+    <meta name="keywords" content="Nosotros, Sostenibilidad, Calidad, Muebles únicos ">
+
     <!-- Link libreria animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../estilos/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- LINK ICONS-->
     <script src="https://kit.fontawesome.com/ba2cfda68c.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>MR-Mobiliario | Nosotros, una empresa familiar</title>
 </head>
 
 <body>
@@ -47,13 +53,55 @@
 
     <main class="mainNosotros">
 
-        <figure class="imgNosotros">
-            <img src="../imagenes/nosotros.jpg" alt="" data-aos="zoom-in">
-        </figure>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/nosotros1.webp" class="d-block w-100" alt="Fabricacion de muebles">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Lunes y Miercoles 15% de descuento con la compra de cualquier producto</h5>
 
-        <section class="textoNosotros">
-            <h3> Sobre Nosotros!</h3>
-            <p>MR mobiliario nace en Agosto de 2016 cuando Mariano Ser, socio fundador decidió fabricar y comercializar
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/nosotros1.webp" class="d-block w-100" alt="Fabricacion de muebles">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Muebles hechos a medida y personalizados</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/nosotros.jpg" class="d-block w-100" alt="Fabricacion de muebles">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Envíos a todo el país</h5>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center aling-items-center m-5 pt-5" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="1500">
+            <h3 class="text-center pb-3 fs-2"> Sobre Nosotros!</h3>
+            <p class="text-center fs-4">MR mobiliario nace en Agosto de 2016 cuando Mariano Ser, socio fundador decidió
+                fabricar y comercializar
                 un producto de bajo costo y alta demanda en el mercado.
 
                 El sueño empezó con la producción de sillones Acapulco, con herramientas prestadas y en un rincón de la
@@ -68,8 +116,49 @@
                 Nos caracterizamos por el desarrollo de técnicas propias, que nos permiten crear una mayor variedad de
                 productos y diseños acordes a los deseos de clientes.
             </p>
-        </section>
+        </div>
 
+        <div class="row m-5" class="nosotrosContainer">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-5 pb-5 mt-5 pt-5">
+                <img src="../imagenes/nosotros1.webp" alt="Seleccion de materia prima" class="w-100" data-aos="fade-right">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center " class="nosotrosTexto">
+
+                <h5 class="text-center fs-4 text-$gray-900" class="nosotros">Cuidadosa selección de las materias primas</h5>
+                <p class="text-center fs-6"> Creemos en el concepto de sostenibilidad y hablamos de él desde el punto de
+                    vista de la coherencia,
+                    de la calidad de lo que proponemos a nuestro público, a las personas. La sostenibilidad consiste en
+                    las cosas bien hechas, las que podemos apreciar durante mucho tiempo.
+
+
+                    La calidad es la característica esencial con la que queremos que se hagan los muebles que ofrecemos.
+                    Fabricar un producto de calidad significa optimizar las materias primas durante la producción del
+                    mueble y garantizar su estado inalterable después del uso.
+                </p>
+            </div>
+
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-center fs-4"> Mobiliario único y personalizable</h5>
+                <p class="text-center fs-6">
+
+                    No existe un mueble único. Proponemos ideas en las que inspirarnos y luego personalizamos los
+                    productos según los gustos y necesidades de nuestros clientes. Tenemos una amplia gama de opciones,
+                    pero siempre tendrá la singularidad de un producto hecho a medida.
+
+
+                    Nuestro objetivo es crear un proyecto de mobiliario adaptado a las preferencias de nuestros
+                    clientes, teniendo en cuenta todos los aspectos de confort que puedan mejorar su estilo de vida. Las
+                    soluciones de mobiliario son infinitas y nuestra tarea es hacer que los muebles sean únicos para
+                    mejorar el entorno en las elecciones de los clientes.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5">
+                <img src="../imagenes/nosotros2.jpg" alt="Mobiliario único y personalizable" class="w-100" data-aos="fade-left">
+            </div>
+        </div>
+        </div>
         <!-- Nuestros servicios -->
         <section class="containerServicios">
             <div class="divServicios">
@@ -102,30 +191,42 @@
     <!-- FOOTER -->
     <footer class="piePagina">
         <div class="grupoUno">
-            <div class="box">
-                <figure><img src="imagenes/Logo/logo1.png" alt=""></figure>
-            </div>
+
 
             <div class="box">
-                <a href=""><i class="fa-solid fa-location-dot fa-2x"></i></a>
-                <p>
-                    Dónde estamos ubicados?
-                    Av. Gral Paz 65 B° Centro
-                </p>
 
-                <a href=""><i class="fa-solid fa-clock fa-2x"></i></a>
-                <p>
-                    Horarios de Atención
-                    Lunes a Viernes de 9 a 18hs
-                    Sábado de 9 a 13hs
-                </p>
-
-                <a href=""><i class="fa-solid fa-truck-fast fa-2x"></i></a>
-                <p>
-                    Horarios de Envío
-                    Lunes a Viernes de 14 a 19hs
-                    Sábado de 11 a 13hs
-                </p>
+                <div>
+                    <a href=""><i class="fa-solid fa-clock fa-2x"></i></a>
+                    <p>
+                        Horarios de Atención
+                    </p>
+                    <p>
+                        Lunes a Viernes de 9 a 18hs
+                    </p>
+                    <p>
+                        Sábado de 9 a 13hs
+                    </p>
+                </div>
+                <div>
+                    <a href=""><i class="fa-solid fa-truck-fast fa-2x"></i></a>
+                    <p>
+                        Horarios de Envío
+                    </p>
+                    <p>
+                        Lunes a Viernes de 14 a 19hs
+                    </p>
+                    <p>
+                        Sábado de 11 a 13hs
+                    </p>
+                </div>
+                <div class="ubicacion">
+                    <a href=""><i class="fa-solid fa-location-dot fa-2x"></i></a>
+                    <p>
+                        Dónde estamos ubicados?
+                    </p>
+                    <p>
+                        Av. Gral Paz 65 B° Centro </p>
+                </div>
             </div>
 
 
@@ -159,12 +260,22 @@
         </div>
     </footer>
 
-<!-- Link libreria animaciones -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 
+    <!-- Link libreria animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
 </body>
 
 </html>

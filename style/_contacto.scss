@@ -1,0 +1,24 @@
+
+.imagenContacto{
+    width: 100%;
+   
+    img{
+        width: 100%;
+        transition:.20s ease all;
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+}
+
+.formularioContacto{
+    p{
+        font-family: 'Merriweather', serif;
+        font-size: $medida2;
+        color: black;
+        transition: .3s ease all;
+        &:hover{
+        color: #334e58;
+        }
+    }
+}

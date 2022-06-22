@@ -1,0 +1,73 @@
+/*maps*/
+$redes: (/*declaro mapa*/
+instagram:#C25E30,
+facebook: #3a5795,
+tiktok: #242222,
+);
+@each $red, $color in $redes {
+    .fa-#{$red}{
+        background-color: $color;
+    }
+}
+
+/*extends*/
+.box {
+    a{
+        text-decoration: none;
+    }
+}
+.box .fa-brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    transition: .8s ease all;
+   
+}
+
+.fa-instagram {
+@extend .fa-brands;
+
+&:hover {
+    background: #334e58;
+    border: 2px solid #334e58;
+    transform: scale(2);
+}
+}
+
+.fa-facebook{
+    @extend .fa-brands;
+    &:hover {
+        
+        background: black;
+        border: 2px solid black;
+        transform: scale(3);
+    }
+}
+
+.fa-tiktok{
+    @extend .fa-brands;
+    &:hover {
+        background: #C25E30;
+        border: 2px solid #C25E30;
+        transform: scale(2);
+    }
+}
+
+/*mixin*/
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;}
+   
+
+.derechos{
+    @include sizes (100%, 25px);
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    
+
+}
