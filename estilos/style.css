@@ -145,6 +145,7 @@ footer {
 
 .padre .img {
   width: 100%;
+  align-items: center;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -178,8 +179,10 @@ footer {
 }
 
 .containerServicios {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -195,14 +198,17 @@ footer {
   padding: 10px 0;
 }
 
-.containerServicios .medios {
-  font-size: 18px;
+.containerServicios .divServicios .medios {
+  font-size: 14px;
   font-family: 'Merriweather', serif;
   color: #fff;
+  align-items: center;
+  text-align: center;
 }
 
-.containerServicios .fa-solid {
+.containerServicios .divServicios .fa-solid {
   color: #fff;
+  align-items: center;
 }
 
 /*---FOOTER-----*/
@@ -397,26 +403,31 @@ footer {
   .containerServicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background-color: #334e58;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    margin-top: 30px;
   }
   .containerServicios .divServicios {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px 0;
   }
-  .containerServicios .medios {
-    font-size: 18px;
+  .containerServicios .divServicios .medios {
+    font-size: 14px;
     font-family: 'Merriweather', serif;
     color: #fff;
+    align-items: center;
+    text-align: center;
   }
-  .containerServicios .fa-solid {
+  .containerServicios .divServicios .fa-solid {
     color: #fff;
+    align-items: center;
   }
   /*---FOOTER-----*/
   .piePagina {
@@ -604,26 +615,31 @@ footer {
   .containerServicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background-color: #334e58;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    margin-top: 30px;
   }
   .containerServicios .divServicios {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px 0;
   }
-  .containerServicios .medios {
+  .containerServicios .divServicios .medios {
     font-size: 18px;
     font-family: 'Merriweather', serif;
     color: #fff;
+    align-items: center;
+    text-align: center;
   }
-  .containerServicios .fa-solid {
+  .containerServicios .divServicios .fa-solid {
     color: #fff;
+    align-items: center;
   }
   /*---FOOTER-----*/
   .piePagina {
@@ -849,15 +865,16 @@ footer {
   }
   .containerServicios .divServicios {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
-  .containerServicios .medios {
+  .containerServicios .divServicios .medios {
     font-size: 18px;
     font-family: 'Merriweather', serif;
     color: #fff;
     display: block;
   }
-  .containerServicios .fa-solid {
+  .containerServicios .divServicios .fa-solid {
     color: #fff;
   }
   /*---FOOTER-----*/
